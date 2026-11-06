@@ -29,3 +29,61 @@ body {
   }
 }
 
+/* ==============================================================================
+   LUIT PRAHARI — SOVEREIGN SKELETON SHIMMER ENGINE
+   ============================================================================== */
+
+@keyframes sovereign-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes sovereign-pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    #F1F5F9 0%,
+    #F8FAFC 20%,
+    #E2E8F0 40%,
+    #F8FAFC 60%,
+    #F1F5F9 100%
+  );
+  background-size: 200% 100%;
+  animation: sovereign-shimmer 2.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  will-change: background-position;
+}
+
+.skeleton-shimmer-fast {
+  background: linear-gradient(
+    90deg,
+    #F1F5F9 0%,
+    #FFFFFF 35%,
+    #E2E8F0 50%,
+    #FFFFFF 65%,
+    #F1F5F9 100%
+  );
+  background-size: 200% 100%;
+  animation: sovereign-shimmer 1.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Staggered Delay Utilities for Cascade Waveform */
+.shimmer-delay-1 { animation-delay: 0.12s; }
+.shimmer-delay-2 { animation-delay: 0.24s; }
+.shimmer-delay-3 { animation-delay: 0.36s; }
+.shimmer-delay-4 { animation-delay: 0.48s; }
+.shimmer-delay-5 { animation-delay: 0.60s; }
+.shimmer-delay-6 { animation-delay: 0.72s; }
+
+

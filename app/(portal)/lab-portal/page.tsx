@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react'
 import { createClient } from '@/lib/supabase/server'
 import { LabClient } from './LabClient'
+import { AnalyticalBenchSkeleton } from '@/components/ui/skeletons'
 
 export default async function LabPortalPage() {
   const supabase = await createClient()
@@ -26,7 +27,7 @@ export default async function LabPortalPage() {
   ])
 
   return (
-    <Suspense fallback={<div className="p-8 text-center text-xs font-semibold text-slate-500">Loading District Testing Lab...</div>}>
+    <Suspense fallback={<AnalyticalBenchSkeleton />}>
       <LabClient 
         parameters={(parametersRes.data as unknown as any[]) || []}
         recentSamples={(samplesRes.data as unknown as any[]) || []}
@@ -37,3 +38,4 @@ export default async function LabPortalPage() {
     </Suspense>
   )
 }
+

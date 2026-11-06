@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react'
 import { createClient } from '@/lib/supabase/server'
 import { SuperAdminClient } from './SuperAdminClient'
+import { SuperAdminSkeleton } from '@/components/ui/skeletons'
 
 export default async function SuperAdminPage() {
   const supabase = await createClient()
@@ -28,7 +29,7 @@ export default async function SuperAdminPage() {
   ])
 
   return (
-    <Suspense fallback={<div className="p-8 text-center text-xs font-semibold text-slate-500">Loading State Headquarters...</div>}>
+    <Suspense fallback={<SuperAdminSkeleton />}>
       <SuperAdminClient 
         divisions={(divisionsRes.data as unknown as any[]) || []}
         labs={(labsRes.data as unknown as any[]) || []}
@@ -43,3 +44,4 @@ export default async function SuperAdminPage() {
     </Suspense>
   )
 }
+

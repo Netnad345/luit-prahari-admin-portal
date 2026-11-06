@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react'
 import { createClient } from '@/lib/supabase/server'
 import { SubDivisionClient } from './SubDivisionClient'
+import { SubDivisionSkeleton } from '@/components/ui/skeletons'
 
 export default async function SubDivisionAdminPage() {
   const supabase = await createClient()
@@ -14,7 +15,7 @@ export default async function SubDivisionAdminPage() {
   ])
 
   return (
-    <Suspense fallback={<div className="p-8 text-center text-xs font-semibold text-slate-500">Loading Sub-Division Workspace...</div>}>
+    <Suspense fallback={<SubDivisionSkeleton />}>
       <SubDivisionClient 
         totalSources={sourcesRes.count || 64}
         totalSamples={samplesRes.count || 328}
@@ -24,5 +25,6 @@ export default async function SubDivisionAdminPage() {
     </Suspense>
   )
 }
+
 
 
