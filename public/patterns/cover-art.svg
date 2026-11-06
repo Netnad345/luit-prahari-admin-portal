@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="300" viewBox="0 0 480 300">
+<!--
+  blocks      luit-deep slab 160x320 (bleeds top and bottom), luit 152x120, muga-bright 160x120 (bleeds right), gamosa red 96x100 (bleeds bottom), luit-soft 208x100 (bleeds right and bottom)
+  arrangement one tall river slab on the left with satellites, split by a woven cloth strip across the middle
+  pattern     literal motif: the gamosa border (two red threads and lozenges at a 48px pitch), because the README names the gamosa band as the kit's one cultural signature
+  scales      gaps space-4 (16), cloth strip 40 = space-6 + space-4, corners radius-lg (16)
+-->
+  <defs>
+    <pattern id="gamosa" width="48" height="40" patternUnits="userSpaceOnUse">
+      <rect fill="#A51D24" x="0" y="4" width="48" height="3"/>
+      <rect fill="#A51D24" x="0" y="33" width="48" height="3"/>
+      <path fill="#A51D24" fill-rule="evenodd" d="M12 11l9 9-9 9-9-9zm0 5l-4 4 4 4 4-4z"/>
+      <path fill="#A51D24" d="M36 15l5 5-5 5-5-5z"/>
+    </pattern>
+  </defs>
+  <rect fill="#0A2F38" rx="20" x="16" y="-16" width="160" height="332"/>
+  <rect fill="#0D5868" rx="20" x="192" y="16" width="136" height="120"/>
+  <rect fill="#C99A3E" rx="20" x="344" y="16" width="160" height="120"/>
+  <rect fill="#fff" x="176" y="152" width="320" height="40"/>
+  <rect fill="url(#gamosa)" x="176" y="152" width="320" height="40"/>
+  <rect fill="#A51D24" rx="20" x="192" y="208" width="96" height="108"/>
+  <rect fill="#E6F1F3" rx="20" x="304" y="208" width="200" height="108"/>
+</svg>

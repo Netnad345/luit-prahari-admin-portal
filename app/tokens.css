@@ -1,0 +1,137 @@
+/* ==========================================================================
+   LUIT PRAHARI MASTER DESIGN SYSTEM TOKENS 2.0 (SOVEREIGN GOVTECH)
+   ========================================================================== */
+
+:root, [data-theme="light"] {
+  /* --- Primary Sovereign Brand: The Mighty Brahmaputra (Luit) --- */
+  --luit-50:  #EFF6FF;
+  --luit-100: #DBEAFE;
+  --luit-200: #BFDBFE;
+  --luit-300: #93C5FD;
+  --luit-500: #0151AF; /* PRIMARY BRAND: Deep Brahmaputra Blue (WCAG AAA) */
+  --luit-600: #014190; /* Hover state for primary CTAs */
+  --luit-700: #003374; /* Active pressed state */
+  --luit-900: #001F48; /* Deepest brand shadow & dark headings */
+
+  /* Legacy aliases for backward compatibility */
+  --luit: #0151AF;
+  --luit-strong: #014190;
+  --on-luit: #FFFFFF;
+  --luit-soft: #EFF6FF;
+  --luit-tint: #F8FAFC;
+  --luit-deep: #0F172A;
+  --on-deep: #F8FAFC;
+  --on-deep-muted: #94A3B8;
+
+  /* --- Cultural Accent: Muga Golden Silk (Assam's Pride) --- */
+  --muga-50:  #FEFCE8;
+  --muga-100: #FEF9C3;
+  --muga-400: #EAB308;
+  --muga-500: #C99A3E; /* PRIMARY ACCENT: Genuine Muga Raw Silk Gold */
+  --muga-700: #936B20;
+  --muga: #C99A3E;
+  --muga-bright: #C99A3E;
+  --muga-soft: #FEF9C3;
+
+  /* --- Cultural Emblem: Assamese Gamosa (Crimson Red) --- */
+  --gamosa-50:  #FBEDEC;
+  --gamosa-100: #F7D4D2;
+  --gamosa-500: #A51D24; /* TRADITIONAL GAMOSA CRIMSON: Official ribbon & urgent items */
+  --gamosa-600: #88151B;
+  --gamosa: #A51D24;
+  --gamosa-soft: #FBEDEC;
+
+  /* --- IS 10500:2012 Compliance Status Tokens --- */
+  /* SAFE / ACCEPTABLE */
+  --status-safe-bg:       #F0FDF4;
+  --status-safe-border:   #BBF7D0;
+  --status-safe-text:     #166534;
+  --status-safe-solid:    #16A34A;
+  --good: #16A34A;
+  --good-soft: #F0FDF4;
+
+  /* ATTENTION / PERMISSIBLE LIMIT */
+  --status-warn-bg:       #FFFBEB;
+  --status-warn-border:   #FDE68A;
+  --status-warn-text:     #92400E;
+  --status-warn-solid:    #D97706;
+  --warning: #F59E0B;
+  --warning-soft: #FEFCE8;
+
+  /* CRITICAL / UNSAFE CONTAMINATION */
+  --status-danger-bg:     #FEF2F2;
+  --status-danger-border: #FECACA;
+  --status-danger-text:   #991B1B;
+  --status-danger-solid:  #DC2626;
+  --critical: #DC2626;
+  --on-critical: #FFFFFF;
+  --critical-soft: #FEF2F2;
+
+  /* GEOGRAPHICAL EXCEPTION / BARRIER */
+  --status-purple-bg:     #FAF5FF;
+  --status-purple-border: #E9D5FF;
+  --status-purple-text:   #6B21A8;
+  --status-purple-solid:  #9333EA;
+
+  /* --- Surfaces & Neutral Slates --- */
+  --surface: #F8FAFC;
+  --surface-raised: #FFFFFF;
+  --surface-sunken: #F1F5F9;
+  --surface-hover: #E2E8F0;
+
+  --ink: #0F172A;
+  --ink-secondary: #334155;
+  --ink-muted: #64748B;
+  --ink-faint: #94A3B8;
+
+  --line: #E2E8F0;
+  --line-strong: #CBD5E1;
+  --focus: #0151AF;
+
+  /* --- Layered Shadows --- */
+  --shadow-micro: 0 1px 2px 0 rgba(15, 23, 42, 0.04);
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-card: 0 1px 3px rgba(15, 23, 42, 0.06), 0 4px 12px -4px rgba(15, 23, 42, 0.07);
+  --shadow-card-hover: 0 4px 14px -2px rgba(15, 23, 42, 0.09), 0 2px 6px -2px rgba(15, 23, 42, 0.05);
+  --shadow-dropdown: 0 10px 25px -5px rgba(15, 23, 42, 0.12), 0 6px 10px -6px rgba(15, 23, 42, 0.08);
+  --shadow-float: 0 4px 12px rgba(15, 23, 42, 0.08), 0 20px 36px -12px rgba(15, 23, 42, 0.12);
+  --shadow-fab: 0 10px 20px -6px rgba(1, 81, 175, 0.45);
+  --shadow-cta-glow: 0 4px 14px 0 rgba(1, 81, 175, 0.28);
+}
+
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  --touch-min: 44px;
+  --control-web: 40px;
+  --control-app: 56px;
+
+  --font-display: "Tiro Bangla", "Noto Serif Bengali", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", "Hind Siliguri", "Noto Sans Bengali", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", "JetBrains Mono", ui-monospace, monospace;
+}
+
+/* Typography Utility Classes */
+.display-xl { font-family: var(--font-display); font-size: 40px; line-height: 48px; font-weight: 700; letter-spacing: -0.01em; }
+.display-l { font-family: var(--font-display); font-size: 28px; line-height: 36px; font-weight: 600; }
+.stat { font-family: var(--font-display); font-size: 38px; line-height: 42px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.title { font-family: var(--font-sans); font-size: 16px; line-height: 22px; font-weight: 600; }
+.body { font-family: var(--font-sans); font-size: 14.5px; line-height: 22px; font-weight: 400; }
+.body-app { font-family: var(--font-sans); font-size: 16px; line-height: 24px; font-weight: 400; }
+.small { font-family: var(--font-sans); font-size: 13px; line-height: 18px; font-weight: 400; }
+.label { font-family: var(--font-sans); font-size: 11px; line-height: 16px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.button { font-family: var(--font-sans); font-size: 14px; line-height: 20px; font-weight: 600; }
+.data { font-family: var(--font-mono); font-size: 12.5px; line-height: 18px; font-weight: 500; font-variant-numeric: tabular-nums; }

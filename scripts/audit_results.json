@@ -1,0 +1,339 @@
+{
+  "successes": [
+    {
+      "moduleName": "Login",
+      "feature": "Page loaded with header: \"Staff Sign In\"",
+      "timestamp": "2026-11-05T08:38:10.133Z"
+    },
+    {
+      "moduleName": "Login",
+      "feature": "Demo Credentials Quick-Fill button clicked and populated form",
+      "timestamp": "2026-11-05T08:38:10.351Z"
+    },
+    {
+      "moduleName": "Login",
+      "feature": "Official email input value verified: admin@phed.assam.gov.in",
+      "timestamp": "2026-11-05T08:38:10.363Z"
+    },
+    {
+      "moduleName": "Login",
+      "feature": "Successfully authenticated and redirected to /division-admin",
+      "timestamp": "2026-11-05T08:38:14.436Z"
+    },
+    {
+      "moduleName": "Division Dashboard",
+      "feature": "Loaded with title: \"Division Operations Dashboard\"",
+      "timestamp": "2026-11-05T08:38:15.971Z"
+    },
+    {
+      "moduleName": "Division Dashboard",
+      "feature": "\"Manage Sources\" action button present with correct href",
+      "timestamp": "2026-11-05T08:38:15.974Z"
+    },
+    {
+      "moduleName": "Division Dashboard",
+      "feature": "\"Print QR Batch\" action button present with correct href",
+      "timestamp": "2026-11-05T08:38:15.975Z"
+    },
+    {
+      "moduleName": "Water Sources",
+      "feature": "Search filter functional (found 1 matching rows for \"Rampur\")",
+      "timestamp": "2026-11-05T08:38:17.877Z"
+    },
+    {
+      "moduleName": "PWSS Schemes",
+      "feature": "Page loaded with title: \"Water Supply Schemes (PWSS Master)\"",
+      "timestamp": "2026-11-05T08:38:21.824Z"
+    },
+    {
+      "moduleName": "PWSS Schemes",
+      "feature": "Scheme type filter buttons present: Groundwater PWSS, Surface Water Intake",
+      "timestamp": "2026-11-05T08:38:21.837Z"
+    },
+    {
+      "moduleName": "PWSS Schemes",
+      "feature": "Filtering by Groundwater active (1 schemes displayed)",
+      "timestamp": "2026-11-05T08:38:22.184Z"
+    },
+    {
+      "moduleName": "PWSS Schemes",
+      "feature": "Connected water sources slide-over drawer opened: \"OPERATIONS\"",
+      "timestamp": "2026-11-05T08:38:22.516Z"
+    },
+    {
+      "moduleName": "Sampling Tasks",
+      "feature": "Page loaded with title: \"Sampling Plan & Task Assignment Engine\"",
+      "timestamp": "2026-11-05T08:38:25.625Z"
+    },
+    {
+      "moduleName": "Sampling Tasks",
+      "feature": "Status filter pills present: All, Pending, Overdue",
+      "timestamp": "2026-11-05T08:38:25.719Z"
+    },
+    {
+      "moduleName": "Sampling Tasks",
+      "feature": "Overdue filter active (1 tasks shown)",
+      "timestamp": "2026-11-05T08:38:26.066Z"
+    },
+    {
+      "moduleName": "Sampling Tasks",
+      "feature": "Task Reassignment modal opened: \"OPERATIONS\"",
+      "timestamp": "2026-11-05T08:38:27.005Z"
+    },
+    {
+      "moduleName": "Bottle QR Batches",
+      "feature": "Page loaded with title: \"Tamper-Evident Bottle QR Batch Generator\"",
+      "timestamp": "2026-11-05T08:38:28.786Z"
+    },
+    {
+      "moduleName": "Bottle QR Batches",
+      "feature": "Recent bottles table rendered with 0 rows",
+      "timestamp": "2026-11-05T08:38:28.791Z"
+    },
+    {
+      "moduleName": "Geo-Exceptions",
+      "feature": "Page loaded with title: \"Audited Geo-Exception Review Queue\"",
+      "timestamp": "2026-11-05T08:38:30.125Z"
+    },
+    {
+      "moduleName": "Samples & Custody",
+      "feature": "Page loaded with title: \"Samples & Unbroken Custody Ledger\"",
+      "timestamp": "2026-11-05T08:38:31.717Z"
+    },
+    {
+      "moduleName": "Samples & Custody",
+      "feature": "\"Export CSV\" action button present and ready",
+      "timestamp": "2026-11-05T08:38:31.728Z"
+    },
+    {
+      "moduleName": "Remediation Alerts",
+      "feature": "Page loaded with title: \"Water Quality Alerts & Corrective Action Triage\"",
+      "timestamp": "2026-11-05T08:38:33.496Z"
+    },
+    {
+      "moduleName": "Remediation Alerts",
+      "feature": "Status filter buttons present: All, Open, Resolved",
+      "timestamp": "2026-11-05T08:38:33.508Z"
+    },
+    {
+      "moduleName": "Remediation Alerts",
+      "feature": "Triage modal opened: \"OPERATIONS\"",
+      "timestamp": "2026-11-05T08:38:33.844Z"
+    },
+    {
+      "moduleName": "Remediation Alerts",
+      "feature": "Remediation actions selector verified (Bleaching powder, booster chlorination, etc.)",
+      "timestamp": "2026-11-05T08:38:33.847Z"
+    },
+    {
+      "moduleName": "Staff & Devices",
+      "feature": "Page loaded with title: \"Division Staff & Mobile Device Security\"",
+      "timestamp": "2026-11-05T08:38:35.824Z"
+    },
+    {
+      "moduleName": "Staff & Devices",
+      "feature": "Switched to Device Security tab: \"Bound Field Hardware & Play Integrity\"",
+      "timestamp": "2026-11-05T08:38:36.177Z"
+    },
+    {
+      "moduleName": "Staff & Devices",
+      "feature": "Remote device security lock button functional: \"Remote Revoke\"",
+      "timestamp": "2026-11-05T08:38:36.186Z"
+    },
+    {
+      "moduleName": "GIS Map",
+      "feature": "Leaflet map container initialized with PostGIS spatial layers",
+      "timestamp": "2026-11-05T08:38:39.892Z"
+    },
+    {
+      "moduleName": "Contaminant Trends",
+      "feature": "Page loaded with title: \"Water Quality Trends & Seasonal Variance\"",
+      "timestamp": "2026-11-05T08:38:41.756Z"
+    },
+    {
+      "moduleName": "Contaminant Trends",
+      "feature": "Parameter selector changed to Turbidity; SVG trend line re-rendered",
+      "timestamp": "2026-11-05T08:38:42.150Z"
+    },
+    {
+      "moduleName": "Statutory Reports",
+      "feature": "Printable certificate loaded: \"Statutory Water Quality Compliance Reports\"",
+      "timestamp": "2026-11-05T08:38:44.217Z"
+    },
+    {
+      "moduleName": "Statutory Reports",
+      "feature": "\"Export CSV\" action button verified",
+      "timestamp": "2026-11-05T08:38:44.236Z"
+    },
+    {
+      "moduleName": "Lab Portal",
+      "feature": "Page loaded with title: \"Laboratory Operations & Quality Assurance\"",
+      "timestamp": "2026-11-05T08:38:46.290Z"
+    },
+    {
+      "moduleName": "Lab Portal",
+      "feature": "Bottle Receipt tab active with Holding Time elapsed calculation",
+      "timestamp": "2026-11-05T08:38:46.646Z"
+    },
+    {
+      "moduleName": "Lab Portal",
+      "feature": "Lab In-Charge Approval tab active: \"Lab In-Charge Endorsement & Sign-Off\"",
+      "timestamp": "2026-11-05T08:38:47.596Z"
+    },
+    {
+      "moduleName": "Super Admin",
+      "feature": "Page loaded with title: \"State Water Quality Cell (Super Admin Governance)\"",
+      "timestamp": "2026-11-05T08:38:50.022Z"
+    },
+    {
+      "moduleName": "Super Admin",
+      "feature": "State Labs directory active with NABL accreditation flags: \"State Water Testing Laboratories Master Directory\"",
+      "timestamp": "2026-11-05T08:38:50.365Z"
+    },
+    {
+      "moduleName": "Super Admin",
+      "feature": "State User Directory active: \"State-Wide Administrative & Laboratory User Roster\"",
+      "timestamp": "2026-11-05T08:38:50.691Z"
+    },
+    {
+      "moduleName": "Super Admin",
+      "feature": "Parameter Limits edit modal opened: \"OPERATIONS\"",
+      "timestamp": "2026-11-05T08:38:51.346Z"
+    },
+    {
+      "moduleName": "Super Admin",
+      "feature": "Geo-fence policy toggled to STRICT BLOCK successfully",
+      "timestamp": "2026-11-05T08:38:52.130Z"
+    },
+    {
+      "moduleName": "Super Admin",
+      "feature": "Cryptographic append-only hash chain integrity verified: \"Chain Integrity Verified\"",
+      "timestamp": "2026-11-05T08:38:52.479Z"
+    },
+    {
+      "moduleName": "Bulk Import",
+      "feature": "Page loaded with title: \"Bulk Historical Data & Source Import Wizard\"",
+      "timestamp": "2026-11-05T08:38:54.864Z"
+    },
+    {
+      "moduleName": "Bulk Import",
+      "feature": "Step 2: Column Mapper loaded successfully",
+      "timestamp": "2026-11-05T08:38:55.210Z"
+    },
+    {
+      "moduleName": "Bulk Import",
+      "feature": "Step 3: Pre-flight validation preview table rendered with clean rows",
+      "timestamp": "2026-11-05T08:38:55.548Z"
+    },
+    {
+      "moduleName": "Bulk Import",
+      "feature": "Step 4: Batch commitment completed: \"Batch Import Committed Successfully!\"",
+      "timestamp": "2026-11-05T08:38:56.585Z"
+    },
+    {
+      "moduleName": "Navigation",
+      "feature": "Sidebar verified with 16 operational routes",
+      "timestamp": "2026-11-05T08:38:56.599Z"
+    }
+  ],
+  "issues": [
+    {
+      "moduleName": "Water Sources",
+      "feature": "Add Source Modal",
+      "expected": "Modal header should contain Register Source",
+      "actual": "OPERATIONS",
+      "severity": "Medium",
+      "timestamp": "2026-11-05T08:38:18.217Z"
+    },
+    {
+      "moduleName": "Water Sources",
+      "feature": "QR Image",
+      "expected": "QR Code image rendered in print modal",
+      "actual": "No QR image found",
+      "severity": "Medium",
+      "timestamp": "2026-11-05T08:38:18.648Z"
+    },
+    {
+      "moduleName": "PWSS Schemes",
+      "feature": "Add Scheme Modal",
+      "expected": "Modal should open on button click",
+      "actual": "OPERATIONS",
+      "severity": "Medium",
+      "timestamp": "2026-11-05T08:38:23.119Z"
+    },
+    {
+      "moduleName": "Sampling Tasks",
+      "feature": "Overdue KPI",
+      "expected": "Overdue tasks card present",
+      "actual": "Not found",
+      "severity": "Low",
+      "timestamp": "2026-11-05T08:38:25.711Z"
+    },
+    {
+      "moduleName": "Sampling Tasks",
+      "feature": "Batch Modal",
+      "expected": "Batch generator modal should open",
+      "actual": "OPERATIONS",
+      "severity": "Medium",
+      "timestamp": "2026-11-05T08:38:26.648Z"
+    },
+    {
+      "moduleName": "Geo-Exceptions",
+      "feature": "Inspect Button",
+      "expected": "Inspect & Decide button in exceptions table",
+      "actual": "Not found",
+      "severity": "Low",
+      "timestamp": "2026-11-05T08:38:30.134Z"
+    },
+    {
+      "moduleName": "Samples & Custody",
+      "feature": "Custody Trail Button",
+      "expected": "View custody trail button in table",
+      "actual": "Not found",
+      "severity": "Low",
+      "timestamp": "2026-11-05T08:38:31.743Z"
+    },
+    {
+      "moduleName": "Staff & Devices",
+      "feature": "Register Staff Modal",
+      "expected": "Register Staff modal should open",
+      "actual": "OPERATIONS",
+      "severity": "Medium",
+      "timestamp": "2026-11-05T08:38:36.523Z"
+    },
+    {
+      "moduleName": "GIS Map",
+      "feature": "Layer Filters",
+      "expected": "All, Verified, High Risk filters",
+      "actual": "Found 0",
+      "severity": "Low",
+      "timestamp": "2026-11-05T08:38:39.900Z"
+    },
+    {
+      "moduleName": "Lab Portal",
+      "feature": "Live Evaluation",
+      "expected": "Live evaluation chip on numeric input",
+      "actual": "Not rendered",
+      "severity": "Medium",
+      "timestamp": "2026-11-05T08:38:47.248Z"
+    },
+    {
+      "moduleName": "Super Admin",
+      "feature": "View Diff Button",
+      "expected": "View Diff button in audit rows",
+      "actual": "Not found",
+      "severity": "Low",
+      "timestamp": "2026-11-05T08:38:52.490Z"
+    },
+    {
+      "moduleName": "Console Runtime",
+      "feature": "Browser Console Error",
+      "expected": "No uncaught client-side JS runtime errors",
+      "actual": "Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:\n\n- A server/client branch `if (typeof window !== 'undefined')`.\n- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.\n- Date formatting in a user's locale which doesn't match the server.\n- External changing data without sending a snapshot of it along with the HTML.\n- Invalid HTML tag nesting.\n\nIt can also happen if the client has a browser extension installed which messes with the HTML before React loaded.\n\nhttps://react.dev/link/hydration-mismatch\n\n  ...\n    <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>\n      <RedirectBoundary>\n        <RedirectErrorBoundary router={{...}}>\n          <InnerLayoutRouter url=\"/division-...\" tree={[...]} params={{}} renderTree={{...}} segmentPath={[...]} ...>\n            <SegmentViewNode type=\"page\" pagePath=\"(portal)/d...\">\n              <SegmentTrieNode>\n              <AlertsPage>\n                <AlertsClient initialAlerts={[...]} sources={[...]} staff={[...]}>\n                  <div className=\"space-y-6\">\n                    <div>\n                    <div>\n                    <div>\n                    <div className=\"overflow-h...\">\n                      <div>\n                      <div className=\"divide-y d...\">\n                        <div className=\"p-6 hover:...\">\n                          <div className=\"flex flex-...\">\n                            <div className=\"space-y-2 ...\">\n                              <div className=\"flex flex-...\">\n                                <span>\n                                <span>\n                                <span className=\"text-xs text-slate-400 font-mono\">\n+                                 Nov 5, 03:00 PM\n-                                 5 Nov, 03:00 pm\n                              ...\n                            ...\n                        ...\n            ...\n          ...\n",
+      "severity": "Low",
+      "timestamp": "2026-11-05T08:38:56.922Z"
+    }
+  ],
+  "totalPasses": 47,
+  "totalIssues": 12
+}

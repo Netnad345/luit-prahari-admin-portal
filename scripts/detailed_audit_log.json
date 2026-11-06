@@ -1,0 +1,66 @@
+[
+  {
+    "category": "Validation",
+    "moduleName": "Sources",
+    "item": "Coordinate Bounds Validation",
+    "issueDesc": "No client-side validation prevents entering invalid latitude (>90) or longitude (<-180)",
+    "severity": "Medium",
+    "recommendation": "Add min=\"-90\" max=\"90\" on latitude and min=\"-180\" max=\"180\" on longitude with warning indicator."
+  },
+  {
+    "category": "UI/Drawer",
+    "moduleName": "PWSS Schemes",
+    "item": "Slide-over Drawer",
+    "issueDesc": "Slide-over drawer element missing fixed right orientation classes",
+    "severity": "Low",
+    "recommendation": "Verify drawer positioning classes."
+  },
+  {
+    "category": "Data Fallback",
+    "moduleName": "Geo-Exceptions",
+    "item": "Empty State Without Demo Mock",
+    "issueDesc": "When database table geo_exceptions has 0 records, no demo records are shown for division admins to test arbitration workflows",
+    "severity": "High",
+    "recommendation": "Add realistic fallback demo geo-exceptions (e.g. GPS Multipath in Deep Ravine, Perimeter Flooding) so the queue can be demonstrated."
+  },
+  {
+    "category": "Data Fallback",
+    "moduleName": "Samples",
+    "item": "Empty State Without Demo Mock",
+    "issueDesc": "When database table samples has 0 records, no demo samples are available to inspect the 6-step unbroken chain of custody trail",
+    "severity": "High",
+    "recommendation": "Provide realistic fallback sample records with completed custody timestamps and test results."
+  },
+  {
+    "category": "Bug/Interactive",
+    "moduleName": "GIS Map",
+    "item": "Map Marker Filter Reactivity",
+    "issueDesc": "LeafletMap component skips updating map markers when filterType select changes because mapInstanceRef.current is never cleared",
+    "severity": "High",
+    "recommendation": "Refactor LeafletMap to maintain a Leaflet LayerGroup ref, clearing and repopulating markers when sources prop updates."
+  },
+  {
+    "category": "UI/Action",
+    "moduleName": "Lab Portal",
+    "item": "Sign-Off Batch Action",
+    "issueDesc": "Endorse & Lock Batch action button not found when reviewing pending results",
+    "severity": "Medium",
+    "recommendation": "Verify pending approvals table action button binding."
+  },
+  {
+    "category": "Data Fallback",
+    "moduleName": "Super Admin",
+    "item": "Empty Audit Log Without Demo Mock",
+    "issueDesc": "When audit_log database table has 0 records, no demo cryptographic hash chain entries are available to inspect JSON state diffs",
+    "severity": "High",
+    "recommendation": "Add fallback demo audit log entries with SHA-256 hash chains so administrators can review mutations and JSON diffs."
+  },
+  {
+    "category": "Hydration Bug",
+    "moduleName": "Global/SSR",
+    "item": "Client-Server Hydration Mismatch",
+    "issueDesc": "Detected 1 React hydration mismatch errors caused by un-suppressed toLocaleDateString() / toLocaleTimeString() rendered during SSR",
+    "severity": "High",
+    "recommendation": "Wrap date strings in a client-mounted component or use deterministic ISO/UTC date formatting with suppressHydrationWarning."
+  }
+]

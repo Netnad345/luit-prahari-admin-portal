@@ -1,0 +1,92 @@
+{
+  "_note": "MapLibre GL layer styles for geo-fences and sources. Add to your style after a GeoJSON source named 'fences' (polygons) and 'sources' (points with property 'status').",
+  "layers": [
+    {
+      "id": "fence-fill",
+      "type": "fill",
+      "source": "fences",
+      "paint": {
+        "fill-color": "#0D5868",
+        "fill-opacity": 0.08
+      }
+    },
+    {
+      "id": "fence-line",
+      "type": "line",
+      "source": "fences",
+      "paint": {
+        "line-color": "#0D5868",
+        "line-width": 1.5,
+        "line-dasharray": [
+          2,
+          2
+        ]
+      }
+    },
+    {
+      "id": "fence-outside",
+      "type": "line",
+      "source": "fences",
+      "filter": [
+        "==",
+        [
+          "get",
+          "state"
+        ],
+        "outside"
+      ],
+      "paint": {
+        "line-color": "#B42318",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "sources",
+      "type": "symbol",
+      "source": "sources",
+      "layout": {
+        "icon-image": [
+          "match",
+          [
+            "get",
+            "status"
+          ],
+          "safe",
+          "source-safe",
+          "due",
+          "source-due",
+          "unsafe",
+          "source-unsafe",
+          "high-risk",
+          "source-high-risk",
+          "source-untested"
+        ],
+        "icon-anchor": "bottom",
+        "icon-allow-overlap": true
+      }
+    },
+    {
+      "id": "clusters",
+      "type": "symbol",
+      "source": "sources",
+      "filter": [
+        "has",
+        "point_count"
+      ],
+      "layout": {
+        "icon-image": "cluster",
+        "text-field": [
+          "get",
+          "point_count_abbreviated"
+        ],
+        "text-font": [
+          "Noto Sans Bold"
+        ],
+        "text-size": 13
+      },
+      "paint": {
+        "text-color": "#F4F8F7"
+      }
+    }
+  ]
+}
