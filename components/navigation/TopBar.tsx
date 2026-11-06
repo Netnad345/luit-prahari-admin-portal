@@ -41,24 +41,24 @@ export function TopBar({ userEmail = 'division@phed.assam.gov.in', roleName, div
   const [searchQuery, setSearchQuery] = useState('')
 
   // Derive active portal level from route
-  const currentRole = roleName || (
+  const currentRole = (
     pathname.startsWith('/super-admin')
       ? 'Head Branch (State HQ)'
       : pathname.startsWith('/subdivision-admin')
       ? 'Sub-Division (AEE)'
       : pathname.startsWith('/lab-portal')
       ? 'District Testing Lab'
-      : 'Division Admin (EE)'
+      : roleName || 'Division Admin (EE)'
   )
 
-  const currentJurisdiction = divisionName || (
+  const currentJurisdiction = (
     pathname.startsWith('/super-admin')
       ? 'Statewide Assam'
       : pathname.startsWith('/subdivision-admin')
       ? 'Rampur Sub-Division'
       : pathname.startsWith('/lab-portal')
       ? 'Kamrup District Lab'
-      : 'Kamrup Division'
+      : divisionName || 'Kamrup Division'
   )
 
   const activeEmail =

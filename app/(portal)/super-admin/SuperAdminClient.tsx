@@ -463,61 +463,113 @@ export function SuperAdminClient({
 
   return (
     <div className="space-y-6">
-      {/* Header */}
-      <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
+      {/* Sovereign Header Bar */}
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-4 border-b border-slate-200">
         <div>
           <div className="flex items-center gap-2">
-            <h1 className="font-['Tiro_Bangla'] text-2xl font-bold text-slate-900">
-              State Water Quality Cell (Super Admin Governance)
-            </h1>
-            <span className="rounded-full bg-blue-50 px-3 py-0.5 text-xs font-bold text-[#0151AF] border border-blue-200">
+            <span className="px-2.5 py-0.5 rounded-md bg-blue-50 border border-blue-200 text-[#0151AF] text-[10.5px] font-bold uppercase tracking-wider">
               Chief Engineer Office · Dispur
             </span>
+            <span className="text-xs text-slate-400 font-medium">Assam Secretariat · State Water Quality Cell</span>
           </div>
-          <p className="text-sm text-slate-500 mt-0.5">
+          <h1 className="mt-1 font-['Tiro_Bangla'] text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
+            State Water Quality Cell (Super Admin Governance)
+          </h1>
+          <p className="text-xs text-slate-500 mt-0.5">
             State-wide division oversight, NABL accredited laboratories, BIS IS 10500 statutory limits, and immutable audit ledger.
           </p>
         </div>
 
-        {/* Tab Navigation */}
-        <div className="flex flex-wrap items-center gap-1 rounded-2xl border border-slate-200 bg-white p-1.5 shadow-xs">
+        <div className="flex items-center gap-2.5 flex-wrap flex-none">
           <button
-            onClick={() => handleTabChange('overview')}
-            className={`rounded-lg px-3 py-1.5 text-xs font-bold transition ${activeTab === 'overview' ? 'bg-[#0151AF] text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'}`}
+            onClick={() => setIsAddUserModalOpen(true)}
+            className="btn-tactile flex items-center gap-2 rounded-xl bg-[#0151AF] px-4 py-2.5 text-xs font-bold text-white shadow-xs hover:bg-[#014190] transition"
           >
-            State Overview
-          </button>
-          <button
-            onClick={() => handleTabChange('divisions_labs')}
-            className={`rounded-lg px-3 py-1.5 text-xs font-bold transition ${activeTab === 'divisions_labs' ? 'bg-[#0151AF] text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'}`}
-          >
-            Divisions & Labs
-          </button>
-          <button
-            onClick={() => handleTabChange('users')}
-            className={`rounded-lg px-3 py-1.5 text-xs font-bold transition ${activeTab === 'users' ? 'bg-[#0151AF] text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'}`}
-          >
-            State Users
-          </button>
-          <button
-            onClick={() => handleTabChange('params')}
-            className={`rounded-lg px-3 py-1.5 text-xs font-bold transition ${activeTab === 'params' ? 'bg-[#0151AF] text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'}`}
-          >
-            IS 10500 Limits
-          </button>
-          <button
-            onClick={() => handleTabChange('policy_rules')}
-            className={`rounded-lg px-3 py-1.5 text-xs font-bold transition ${activeTab === 'policy_rules' ? 'bg-[#0151AF] text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'}`}
-          >
-            Policy & Rules
-          </button>
-          <button
-            onClick={() => handleTabChange('audit')}
-            className={`rounded-lg px-3 py-1.5 text-xs font-bold transition ${activeTab === 'audit' ? 'bg-[#0151AF] text-white shadow-xs' : 'text-slate-600 hover:text-slate-900'}`}
-          >
-            Audit Log Ledger
+            <Plus className="h-3.5 w-3.5 text-white" />
+            <span>+ Provision State Officer</span>
           </button>
         </div>
+      </div>
+
+      {/* Modern Segmented Navigation Tabs — Dedicated Full-Width Bar */}
+      <div className="flex items-center gap-1.5 p-1.5 bg-slate-100 rounded-2xl border border-slate-200 overflow-x-auto custom-scrollbar">
+        <button
+          onClick={() => handleTabChange('overview')}
+          className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold transition btn-tactile whitespace-nowrap ${
+            activeTab === 'overview'
+              ? 'bg-white text-[#0151AF] shadow-sm ring-1 ring-slate-200'
+              : 'text-slate-600 hover:text-slate-900 hover:bg-white/50'
+          }`}
+        >
+          <Layers className="h-3.5 w-3.5" />
+          <span>State Overview</span>
+        </button>
+
+        <button
+          onClick={() => handleTabChange('divisions_labs')}
+          className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold transition btn-tactile whitespace-nowrap ${
+            activeTab === 'divisions_labs'
+              ? 'bg-white text-[#0151AF] shadow-sm ring-1 ring-slate-200'
+              : 'text-slate-600 hover:text-slate-900 hover:bg-white/50'
+          }`}
+        >
+          <Building2 className="h-3.5 w-3.5" />
+          <span>Divisions & Labs</span>
+          <span className="px-1.5 py-0.2 rounded-full bg-blue-100 text-[#0151AF] text-[10px] font-extrabold">
+            {divisions.length}
+          </span>
+        </button>
+
+        <button
+          onClick={() => handleTabChange('users')}
+          className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold transition btn-tactile whitespace-nowrap ${
+            activeTab === 'users'
+              ? 'bg-white text-[#0151AF] shadow-sm ring-1 ring-slate-200'
+              : 'text-slate-600 hover:text-slate-900 hover:bg-white/50'
+          }`}
+        >
+          <Users className="h-3.5 w-3.5" />
+          <span>State Users</span>
+          <span className="px-1.5 py-0.2 rounded-full bg-slate-200 text-slate-700 text-[10px] font-extrabold">
+            {profiles.length}
+          </span>
+        </button>
+
+        <button
+          onClick={() => handleTabChange('params')}
+          className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold transition btn-tactile whitespace-nowrap ${
+            activeTab === 'params'
+              ? 'bg-white text-[#0151AF] shadow-sm ring-1 ring-slate-200'
+              : 'text-slate-600 hover:text-slate-900 hover:bg-white/50'
+          }`}
+        >
+          <FlaskConical className="h-3.5 w-3.5" />
+          <span>IS 10500 Limits</span>
+        </button>
+
+        <button
+          onClick={() => handleTabChange('policy_rules')}
+          className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold transition btn-tactile whitespace-nowrap ${
+            activeTab === 'policy_rules'
+              ? 'bg-white text-[#0151AF] shadow-sm ring-1 ring-slate-200'
+              : 'text-slate-600 hover:text-slate-900 hover:bg-white/50'
+          }`}
+        >
+          <Sliders className="h-3.5 w-3.5" />
+          <span>Policy & Rules</span>
+        </button>
+
+        <button
+          onClick={() => handleTabChange('audit')}
+          className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold transition btn-tactile whitespace-nowrap ${
+            activeTab === 'audit'
+              ? 'bg-white text-[#0151AF] shadow-sm ring-1 ring-slate-200'
+              : 'text-slate-600 hover:text-slate-900 hover:bg-white/50'
+          }`}
+        >
+          <Shield className="h-3.5 w-3.5" />
+          <span>Audit Log Ledger</span>
+        </button>
       </div>
 
       {/* TAB 1: STATE OVERVIEW & COMPARATIVE BENCHMARK */}
