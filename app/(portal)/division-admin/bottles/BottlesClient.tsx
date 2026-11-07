@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
+import Link from 'next/link'
 import QRCode from 'qrcode'
 import { createClient } from '@/lib/supabase/client'
 import { FormattedDate } from '@/components/common/FormattedDate'
@@ -106,6 +107,27 @@ export function BottlesClient({ initialBottles }: BottlesClientProps) {
             <span>Print {generatedLabels.length} Labels</span>
           </button>
         )}
+      </div>
+
+      {/* Autonomous Jalamitra Banner */}
+      <div className="rounded-xl border border-blue-200 bg-blue-50/70 p-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3">
+        <div className="flex items-start gap-3">
+          <div className="p-2 rounded-lg bg-blue-100 text-blue-700 mt-0.5">
+            <ShieldCheck className="h-5 w-5" />
+          </div>
+          <div>
+            <h3 className="text-sm font-bold text-blue-900">Decentralized Jalamitra Minting Active</h3>
+            <p className="text-xs text-blue-700 mt-0.5 max-w-xl">
+              Approved Jalamitras can now mint their own single-use labels for tubes and bottles directly within their mobile app, eliminating field delays. Review and authorize samplers at the KYC desk.
+            </p>
+          </div>
+        </div>
+        <Link
+          href="/division-admin/jalamitra-approvals"
+          className="px-3 py-1.5 text-xs font-bold bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition whitespace-nowrap shadow-sm"
+        >
+          Open Jalamitra KYC Desk â†’
+        </Link>
       </div>
 
       {/* Batch Generator Card */}

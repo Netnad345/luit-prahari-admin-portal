@@ -16,6 +16,7 @@ import {
   TrendingUp, 
   FileSpreadsheet, 
   Users, 
+  UserCheck,
   UploadCloud, 
   Sparkles,
   Droplets,
@@ -66,6 +67,7 @@ function SidebarContent() {
     {
       title: 'Field Surveillance & Sampling',
       items: [
+        { name: 'Jalamitra KYC Approvals', href: '/division-admin/jalamitra-approvals', icon: UserCheck, badge: 'Gate', badgeVariant: 'green' },
         { name: 'Sampling Tasks Queue', href: '/division-admin/tasks', icon: Calendar, badge: '5 Active' },
         { name: 'Samples & Custody', href: '/division-admin/samples', icon: ShieldCheck },
         { name: 'Geo-Exceptions Queue', href: '/division-admin/exceptions', icon: AlertTriangle, badge: '1', badgeVariant: 'amber' },
@@ -77,7 +79,6 @@ function SidebarContent() {
       items: [
         { name: 'Analytical Lab Bench', href: '/lab-portal', icon: TestTubes },
         { name: 'Bottle QR Batches', href: '/division-admin/bottles', icon: QrCode },
-        { name: 'QR Testing Lab', href: '/qr-test', icon: QrCode, badge: 'TEST LAB', badgeVariant: 'blue', highlight: true },
       ]
     },
     {
